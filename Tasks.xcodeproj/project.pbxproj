@@ -61,14 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				F44AA3F42A0BAAB300966406 /* AppDelegate.swift */,
-				F44AA3F62A0BAAB300966406 /* SceneDelegate.swift */,
-				F44AA3F82A0BAAB300966406 /* ViewController.swift */,
-				F44AA3FA2A0BAAB300966406 /* Main.storyboard */,
 				F44AA3FD2A0BAAB700966406 /* Assets.xcassets */,
-				F44AA3FF2A0BAAB700966406 /* LaunchScreen.storyboard */,
-				F44AA4022A0BAAB700966406 /* Info.plist */,
 				F44AA4092A0BBA5D00966406 /* EntryViewController.swift */,
+				F44AA4022A0BAAB700966406 /* Info.plist */,
+				F44AA3FF2A0BAAB700966406 /* LaunchScreen.storyboard */,
+				F44AA3FA2A0BAAB300966406 /* Main.storyboard */,
+				F44AA3F62A0BAAB300966406 /* SceneDelegate.swift */,
 				F44AA40C2A0BBB0100966406 /* TaskViewController.swift */,
+				F44AA3F82A0BAAB300966406 /* ViewController.swift */,
 			);
 			path = Tasks;
 			sourceTree = "<group>";

@@ -65,7 +65,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Task name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sz5-Eh-uUX">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" text="Task name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sz5-Eh-uUX">
                                 <rect key="frame" x="20" y="64" width="374" height="50"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <constraints>
@@ -74,11 +74,48 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" text="Data" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SVG-j9-fpj">
+                                <rect key="frame" x="20" y="122" width="374" height="50"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="6VK-Or-CyH"/>
+                                    <constraint firstAttribute="height" constant="50" id="VSA-bI-Hfg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" text="Urgency" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LVq-ez-u8m">
+                                <rect key="frame" x="20" y="180" width="374" height="50"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="sQQ-Ue-7n3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" text="Notes" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="acq-aC-VXM">
+                                <rect key="frame" x="20" y="238" width="374" height="500"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="qkp-2d-Ege"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dCQ-uG-w1C"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="LVq-ez-u8m" firstAttribute="leading" secondItem="dCQ-uG-w1C" secondAttribute="leading" constant="20" id="BAR-9O-xxL"/>
+                            <constraint firstItem="SVG-j9-fpj" firstAttribute="leading" secondItem="dCQ-uG-w1C" secondAttribute="leading" constant="20" id="ISW-Ai-pfj"/>
+                            <constraint firstItem="acq-aC-VXM" firstAttribute="top" secondItem="LVq-ez-u8m" secondAttribute="bottom" constant="8" symbolic="YES" id="Lij-FA-0y3"/>
+                            <constraint firstItem="dCQ-uG-w1C" firstAttribute="trailing" secondItem="LVq-ez-u8m" secondAttribute="trailing" constant="20" id="daj-2r-Ouo"/>
+                            <constraint firstItem="dCQ-uG-w1C" firstAttribute="trailing" secondItem="acq-aC-VXM" secondAttribute="trailing" constant="20" id="fof-lH-5uq"/>
+                            <constraint firstItem="dCQ-uG-w1C" firstAttribute="trailing" secondItem="SVG-j9-fpj" secondAttribute="trailing" constant="20" id="hzj-4L-ooy"/>
                             <constraint firstItem="Sz5-Eh-uUX" firstAttribute="top" secondItem="dCQ-uG-w1C" secondAttribute="top" constant="20" id="ihz-MQ-c2c"/>
+                            <constraint firstItem="LVq-ez-u8m" firstAttribute="top" secondItem="SVG-j9-fpj" secondAttribute="bottom" constant="8" symbolic="YES" id="mR4-qI-0Xv"/>
+                            <constraint firstItem="SVG-j9-fpj" firstAttribute="top" secondItem="Sz5-Eh-uUX" secondAttribute="bottom" constant="8" symbolic="YES" id="qiE-mw-1g6"/>
+                            <constraint firstItem="acq-aC-VXM" firstAttribute="leading" secondItem="dCQ-uG-w1C" secondAttribute="leading" constant="20" id="tjD-jj-PgS"/>
                             <constraint firstItem="Sz5-Eh-uUX" firstAttribute="leading" secondItem="dCQ-uG-w1C" secondAttribute="leading" constant="20" id="y5D-2F-Gba"/>
                             <constraint firstItem="dCQ-uG-w1C" firstAttribute="trailing" secondItem="Sz5-Eh-uUX" secondAttribute="trailing" constant="20" id="zXb-VP-85x"/>
                         </constraints>
